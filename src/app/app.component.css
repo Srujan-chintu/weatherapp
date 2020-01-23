@@ -1,0 +1,18 @@
+.header {
+  background-color: skyblue;
+  height: 100px;
+  text-align: left;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+}
+.detail {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.table-cust {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}

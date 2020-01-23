@@ -1,0 +1,46 @@
+<div class="container-fluid header">
+    <div class="row">
+        <div style="padding-left: 20px;">
+            Weather Cast
+        </div>
+        <div>
+            <img src="assets/banner.jpg " height="100px " style="padding-left:580px ;margin-top:-12px">
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid detail ">
+    <div class="row">
+        <div style="padding-left: 10px;">Location : Hyderabad</div>
+        <div style=" padding-left: 30px; ">Date : {{today_date|date}}</div>
+        <div style="padding-left:750px;">
+            <a href="http://localhost:4200/"><button class="btn btn-primary" style="border-radius: 0 !important;background-color:skyblue;border-color:skyblue" type="submit">Refresh</button></a>
+        </div>
+    </div>
+
+
+</div>
+<div class="table-cust ">
+    <table class="table ">
+        <thead>
+            <tr>
+                <th scope="col ">Time (in millisecs) <img src="assets/time.png " height="20px "></th>
+                <th scope="col ">Temperature <img src="assets/thermometer.jpg " height="28px "></th>
+                <th scope="col ">Pressure <img src="assets/pressure.png " height="20px "></th>
+                <th scope="col ">Humidity <img src="assets/humidity.png " height="20px "></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            
+          
+            <tr  *ngFor="let data of weathers">
+                <td>{{data.time|date:'h:mm:ss:SSS a'}}</td>
+                <td>{{data.main.temp}} <sup>o</sup>C</td>
+                <td>{{data.main['pressure']}} K Pas</td>
+                <td>{{data.main['humidity']}} %</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
