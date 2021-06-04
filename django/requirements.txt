@@ -1,6 +1,6 @@
 certifi==2019.11.28
 chardet==3.0.4
-Django==2.2.6
+Django==2.2.21
 django-cors-headers==3.2.1
 djangorestframework==3.10.3
 httpie==2.0.0
