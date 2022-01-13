@@ -7,7 +7,7 @@ httpie==2.0.0
 idna==2.8
 mysql-connector-python==8.0.18
 mysqlclient==1.4.6
-Pillow==6.2.1
+Pillow==9.0.0
 protobuf==3.10.0
 Pygments==2.5.2
 pytz==2019.3
